@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Image from "next/image";
 import data from '../data.json'
+import LoginForm from "./components/LoginForm";
 
 
 const Home = () => {
@@ -20,6 +21,8 @@ const Home = () => {
         <h1 className="font-semibold px-4 pt-2">{data.name}</h1>
 
       </div>
+
+      <LoginForm />
 
 
     </main>
