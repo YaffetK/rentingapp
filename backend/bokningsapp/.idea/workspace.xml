@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ffb893-d563-49ea-9837-82452802268a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/pages/Register.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/pages/_app.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/pages/api/hello.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/pages/components/LoginForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/pages/components/Navbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/pages/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/public/changershub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/styles/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../rentingapp/yarn.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="16ffb893-d563-49ea-9837-82452802268a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +30,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2KWIf0r14JL75HKH1Fhw9VTvZEn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,7 +61,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BokningsappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bokningsapp.bokningsapp.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bokningsapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bokningsapp.BokningsappApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BokningsappApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674084012111</updated>
-      <workItem from="1674084013804" duration="99000" />
+      <workItem from="1674084013804" duration="913000" />
     </task>
     <servers />
   </component>
