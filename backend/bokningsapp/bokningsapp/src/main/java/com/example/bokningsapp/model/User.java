@@ -1,10 +1,11 @@
 package com.example.bokningsapp.model;
 
 import jakarta.persistence.*;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 @Table
 @Entity(name = "users")
-public class User {
+public class User implements UserDetailsService {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
