@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResponseEntity<List<User>> getAllUsers(String userName) {
+    public ResponseEntity<List<User>> getAllUsers() {
         try {
             List<User> userList = userRepository.findAll();
 
@@ -50,16 +50,51 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ResponseEntity<User> saveUser(User user) {
+        try{
+            User savedUser = userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail()));
+            return new ResponseEntity<>(savedUser,HttpStatus.CREATED);
+
+        } catch (Exception e){
+            return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @Override
+    public ResponseEntity<User> updateUser(long id , User user) {
+        try {
+            if (userRepository.existsById(id)) {
+                User updatedUser = userRepository.getReferenceById(id);
+
+                updatedUser.setName(user.getName());
+                updatedUser.setLastName(user.getLastName());
+                updatedUser.setEmail(user.getEmail());
+
+                userRepository.save(updatedUser);
+
+                return new ResponseEntity<>(updatedUser, HttpStatus.OK);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
         return null;
     }
 
     @Override
-    public ResponseEntity<User> updateUser(User user) {
-        return null;
-    }
+    public String deleteUser(long id) {
 
-    @Override
-    public ResponseEntity<User> deleteUser(long id) {
-        return null;
+        User deletedUser = userRepository.getReferenceById(id);
+        try{
+            if (userRepository.existsById(id)) {
+                userRepository.delete(deletedUser);
+                return "User with id:" +id + "Was successfully deleted";
+            } else {
+                return "There is no current User with id:" + id;
+            }
+        } catch (Exception e) {
+            return "INTERNAL_SERVER_ERROR)";
+        }
+
+
+
     }
 }

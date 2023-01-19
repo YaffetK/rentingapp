@@ -14,36 +14,17 @@ import java.util.List;
 public class UserController {
 
 
-    private final UserRepository userRepository;
-
-
     private final UserServiceImpl userServiceImpl;
 
     @Autowired
-    public UserController(UserRepository userRepository, UserServiceImpl userServiceImpl) {
-        this.userRepository = userRepository;
+    public UserController( UserServiceImpl userServiceImpl) {
         this.userServiceImpl = userServiceImpl;
     }
 
     @GetMapping(value = "/users")
-    public ResponseEntity<List<User>> getAllUsers(){
-        try {
-            List<User> userList = userRepository.findAll();
+    public ResponseEntity<List<User>> getUsers(){
 
-            if (!userList.isEmpty()) {
-                return new ResponseEntity<>(userList, HttpStatus.OK);
-            }
-            else {
-                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-            }
-
-
-
-        }catch (Exception e) {
-            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-            // Kan jag få ut Error meddelandet på något sätt?
-
-        }
+       return userServiceImpl.getAllUsers();
     }
 
 //    @GetMapping(value = "user/{id}")
@@ -56,49 +37,19 @@ public class UserController {
 
     @PostMapping(value = "/user")
     public ResponseEntity<User> addUser(@RequestBody User user){
-        userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail()));
-        try{
-            User savedUser = userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail()));
-            return new ResponseEntity<>(savedUser,HttpStatus.CREATED);
+       return userServiceImpl.saveUser(user);
 
-        } catch (Exception e){
-            return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
     @PutMapping(value = "user/{id}")
     public ResponseEntity<User> updateUser (@PathVariable long id, @RequestBody User user) {
-        User updatedUser = userRepository.getReferenceById(id);
 
-        try {
-            updatedUser.setName(user.getName());
-            updatedUser.setLastName(user.getLastName());
-            updatedUser.setEmail(user.getEmail());
-
-            userRepository.save(updatedUser);
-
-            return new ResponseEntity<>(updatedUser,HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-
-        }
+        return userServiceImpl.updateUser(id,user);
     }
+
     @DeleteMapping(value = "user/{id}")
-    public ResponseEntity<Long> deleteUser(@PathVariable long id){
+    public String deleteUser(@PathVariable long id) {
 
-        User deletedUser = userRepository.getReferenceById(id);
-        try{
-            if (userRepository.existsById(id)) {
-                userRepository.delete(deletedUser);
-                return new ResponseEntity<>(id,HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(id,HttpStatus.NO_CONTENT);
-            }
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-
-
+        return userServiceImpl.deleteUser(id);
     }
-
 
 }

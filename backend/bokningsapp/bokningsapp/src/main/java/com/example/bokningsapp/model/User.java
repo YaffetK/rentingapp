@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 @Table
 @Entity(name = "users")
-public class User implements UserDetailsService {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
