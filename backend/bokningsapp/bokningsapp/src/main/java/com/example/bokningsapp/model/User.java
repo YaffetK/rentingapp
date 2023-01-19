@@ -3,8 +3,8 @@ package com.example.bokningsapp.model;
 import jakarta.persistence.*;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
-@Table
-@Entity(name = "users")
+@Entity
+@Table(name = "users")
 public class User {
 
     @Id

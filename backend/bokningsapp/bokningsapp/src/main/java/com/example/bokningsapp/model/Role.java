@@ -3,8 +3,8 @@ package com.example.bokningsapp.model;
 import com.example.bokningsapp.userAuthorities.ERole;
 import jakarta.persistence.*;
 
-@Table
-@Entity(name = "roles")
+@Entity
+@Table(name = "roles")
 public class Role {
 
         @Id
