@@ -1,11 +1,13 @@
 package com.example.bokningsapp.model;
 
 import jakarta.persistence.*;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 @Table
 @Entity(name = "users")
-public class User implements UserDetailsService {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

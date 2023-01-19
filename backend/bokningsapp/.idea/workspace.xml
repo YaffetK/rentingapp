@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ffb893-d563-49ea-9837-82452802268a" name="Changes" comment="" />
+    <list default="true" id="7e04d313-30be-45b2-8154-b9e5ca9104e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
