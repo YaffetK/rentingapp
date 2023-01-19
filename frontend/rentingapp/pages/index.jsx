@@ -1,7 +1,7 @@
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import Image from "next/image";
 import data from '../data.json'
-import LoginForm from "./components/LoginForm";
+import LoginForm from "../components/LoginForm";
 import camera from '../public/camera.png'
 
 
