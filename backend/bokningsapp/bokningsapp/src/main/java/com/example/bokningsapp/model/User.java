@@ -1,10 +1,17 @@
 package com.example.bokningsapp.model;
 
 import jakarta.persistence.*;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+<<<<<<< HEAD
 @Entity
 @Table(name = "users")
+=======
+@Table
+@Entity(name = "users")
+>>>>>>> 8146292eb8c5b45ff1ae8b0ceb0ae8f74c5921ce
 public class User {
 
     @Id

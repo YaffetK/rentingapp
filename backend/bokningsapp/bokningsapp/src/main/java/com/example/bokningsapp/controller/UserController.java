@@ -14,6 +14,10 @@ import java.util.List;
 public class UserController {
 
 
+<<<<<<< HEAD
+=======
+    private final UserRepository userRepository;
+>>>>>>> 8146292eb8c5b45ff1ae8b0ceb0ae8f74c5921ce
     private final UserServiceImpl userServiceImpl;
 
     @Autowired
