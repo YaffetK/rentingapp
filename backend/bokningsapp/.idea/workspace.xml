@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ffb893-d563-49ea-9837-82452802268a" name="Changes" comment="" />
+    <list default="true" id="16ffb893-d563-49ea-9837-82452802268a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/models/CanonCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/controllers/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/Camera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/repository/RoleRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/types/EquipmentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/enums/EquipmentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/types/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/enums/Status.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +45,14 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -55,27 +82,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
-  </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/luliyamasfun/sti/projects/rentingApp/backend/bokningsapp",
+    "spring.configuration.checksum": "884987373e32e0cc0403810bd24ea11d"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.BokningsappApplication">
+    <configuration name="BokningsappApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.example.bokningsapp.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bokningsapp.BokningsappApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BokningsappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="bokningsapp.bokningsapp.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bokningsapp.BokningsappApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.bokningsapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bokningsapp.BokningsappApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,6 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674084012111</updated>
       <workItem from="1674084013804" duration="913000" />
+      <workItem from="1674152416517" duration="3132000" />
     </task>
     <servers />
   </component>

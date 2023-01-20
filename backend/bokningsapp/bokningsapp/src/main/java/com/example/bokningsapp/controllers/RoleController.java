@@ -1,7 +1,7 @@
-package com.example.bokningsapp.controller;
+package com.example.bokningsapp.controllers;
 
-import com.example.bokningsapp.model.Role;
-import com.example.bokningsapp.repository.RoleRepository;
+import com.example.bokningsapp.models.Role;
+import com.example.bokningsapp.repository.RoleRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,10 +14,10 @@ import java.util.List;
 public class RoleController {
 
 
-    private final RoleRepository roleRepository;
+    private final RoleRepo roleRepository;
 
     @Autowired
-    public RoleController(RoleRepository roleRepository) {
+    public RoleController(RoleRepo roleRepository) {
         this.roleRepository= roleRepository;
     }
 

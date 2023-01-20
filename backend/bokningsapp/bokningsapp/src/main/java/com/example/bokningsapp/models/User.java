@@ -1,4 +1,4 @@
-package com.example.bokningsapp.model;
+package com.example.bokningsapp.models;
 
 import jakarta.persistence.*;
 import org.springframework.security.core.userdetails.UserDetailsService;

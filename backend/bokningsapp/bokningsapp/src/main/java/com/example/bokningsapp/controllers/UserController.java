@@ -1,7 +1,7 @@
-package com.example.bokningsapp.controller;
+package com.example.bokningsapp.controllers;
 
-import com.example.bokningsapp.model.User;
-import com.example.bokningsapp.repository.UserRepository;
+import com.example.bokningsapp.models.User;
+import com.example.bokningsapp.repository.UserRepo;
 import com.example.bokningsapp.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,13 +14,13 @@ import java.util.List;
 public class UserController {
 
 
-    private final UserRepository userRepository;
+    private final UserRepo userRepository;
 
 
     private final UserServiceImpl userServiceImpl;
 
     @Autowired
-    public UserController(UserRepository userRepository, UserServiceImpl userServiceImpl) {
+    public UserController(UserRepo userRepository, UserServiceImpl userServiceImpl) {
         this.userRepository = userRepository;
         this.userServiceImpl = userServiceImpl;
     }

@@ -1,7 +1,7 @@
 package com.example.bokningsapp.service;
 
-import com.example.bokningsapp.model.User;
-import com.example.bokningsapp.repository.UserRepository;
+import com.example.bokningsapp.models.User;
+import com.example.bokningsapp.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,10 +12,10 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserRepository userRepository;
+    private final UserRepo userRepository;
 
     @Autowired
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepo userRepository) {
         this.userRepository = userRepository;
     }
 

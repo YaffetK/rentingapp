@@ -1,6 +1,6 @@
 package com.example.bokningsapp.service;
 
-import com.example.bokningsapp.model.User;
+import com.example.bokningsapp.models.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 

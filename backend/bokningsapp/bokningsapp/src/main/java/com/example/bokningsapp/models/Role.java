@@ -1,4 +1,4 @@
-package com.example.bokningsapp.model;
+package com.example.bokningsapp.models;
 
 import com.example.bokningsapp.userAuthorities.ERole;
 import jakarta.persistence.*;

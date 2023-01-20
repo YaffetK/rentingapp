@@ -1,4 +1,4 @@
-package com.example.bokningsapp.types;
+package com.example.bokningsapp.enums;
 
 public enum Status {
     STATUS_ACTIVE,
