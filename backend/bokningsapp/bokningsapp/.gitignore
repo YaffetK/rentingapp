@@ -25,6 +25,7 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.uiDesigner.xml
 
 ### NetBeans ###
 /nbproject/private/
@@ -37,3 +38,6 @@ out/
 .vscode/
 
 /src/main/resources/application.properties
+/resources/main/application.properties
+/previous-compilation-data.bin
+
