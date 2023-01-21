@@ -3,6 +3,7 @@ import Image from "next/image";
 import data from '../data.json'
 import LoginForm from "../components/LoginForm";
 import camera from '../public/camera.png'
+import ListingThumbnail from "./ListingThumb";
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       </div>
 
       <LoginForm />
+      <ListingThumbnail />
 
 
 
