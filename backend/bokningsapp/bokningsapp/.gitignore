@@ -25,7 +25,7 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.uiDesigner.xml
+*.uiDesigner.xml
 
 ### NetBeans ###
 /nbproject/private/
