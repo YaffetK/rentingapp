@@ -11,7 +11,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long userId;
     @Column
     private String name;
     @Column
@@ -29,7 +29,7 @@ public class User {
     }
 
     public Long getId() {
-        return id;
+        return userId;
     }
 
     public String getName() {
@@ -59,7 +59,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id=" + userId +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
