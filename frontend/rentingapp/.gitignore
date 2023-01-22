@@ -34,4 +34,5 @@ yarn-error.log*
 
 # IntelIj
 ./backend/
+App_data
 
