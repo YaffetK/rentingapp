@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseEntity<User> saveUser(User user) {
         try{
-            User savedUser = userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail()));
+            User savedUser = userRepository.save(user);
             return new ResponseEntity<>(savedUser,HttpStatus.CREATED);
 
         } catch (Exception e){
