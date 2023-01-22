@@ -16,7 +16,7 @@ public class User {
     @Column
     private String name;
     @Column
-    private String lastName;
+    private String last_name;
     @Column
     private String email;
 
@@ -37,11 +37,11 @@ public class User {
     }
 
     public String getLastName() {
-        return lastName;
+        return last_name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getEmail() {
@@ -57,7 +57,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", last_name='" + last_name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

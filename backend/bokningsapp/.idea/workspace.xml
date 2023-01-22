@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16ffb893-d563-49ea-9837-82452802268a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
@@ -12,16 +13,9 @@
       <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/model/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/model/Camera.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build/classes/java/main/com/example/bokningsapp/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/SecurityConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bokningsapp/src/main/java/com/example/bokningsapp/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +61,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -84,10 +78,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
