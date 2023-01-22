@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7872e26-7602-4052-97f1-bf4c50d85f77" name="Changes" comment="" />
+    <list default="true" id="f7872e26-7602-4052-97f1-bf4c50d85f77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/Equipment.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/luliyamasfun/sti/projects/rentingapp2/backend/bokningsapp/bokningsapp",
+    "last_opened_file_path": "/Users/luliyamasfun/sti/projects/rentingapp/backend/bokningsapp/bokningsapp",
     "spring.configuration.checksum": "2d74ec2281fb7930b8c1d57299107812"
   }
 }]]></component>
@@ -81,6 +84,7 @@
       <workItem from="1673906894924" duration="30702000" />
       <workItem from="1674070477638" duration="1613000" />
       <workItem from="1674318622684" duration="569000" />
+      <workItem from="1674399119732" duration="444000" />
     </task>
     <servers />
   </component>

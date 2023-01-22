@@ -45,6 +45,9 @@ import jakarta.persistence.*;
             this.equipmentType = equipmentType;
         }
 
+        public Equipment() {
+        }
+
         public int getEquipmentId() {
             return equipmentId;
         }
