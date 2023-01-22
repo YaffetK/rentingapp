@@ -26,12 +26,12 @@ public class UserController {
        return userServiceImpl.getAllUsers();
     }
 
-//    @GetMapping(value = "user/{id}")
-//    public ResponseEntity<User>getUser(@PathVariable long id) {
-//
-//        User user = userRepository.getReferenceById(id);
-//
-//    }
+
+  @GetMapping(value = "user/{id}")
+  public ResponseEntity<User>getUser(@PathVariable long id) {
+
+        return userServiceImpl.getUser(id);
+     }
 
 
     @PostMapping(value = "/user")
