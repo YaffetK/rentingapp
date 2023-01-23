@@ -5,13 +5,15 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import java.util.List;
+
 @Table
 @Entity(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
+    private Long id;
     @Column
     private String name;
     @Column
@@ -19,17 +21,21 @@ public class User {
     @Column
     private String email;
 
-    public User(String name, String lastName, String email) {
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<EquipmentBooking> equipmentBookings;
+
+    public User(String name, String lastName, String email, List<EquipmentBooking> equipmentBookings) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
+        this.equipmentBookings = equipmentBookings;
     }
 
     public User() {
     }
 
     public Long getId() {
-        return userId;
+        return id;
     }
 
     public String getName() {
@@ -56,10 +62,18 @@ public class User {
         this.email = email;
     }
 
+    public List<EquipmentBooking> getEquipmentBookings() {
+        return equipmentBookings;
+    }
+
+    public void setEquipmentBookings(List<EquipmentBooking> equipmentBookings) {
+        this.equipmentBookings = equipmentBookings;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "id=" + userId +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +

@@ -3,12 +3,13 @@ package com.example.bokningsapp.model;
 import com.example.bokningsapp.enums.BookingStatus;
 import jakarta.persistence.*;
 
+import java.time.LocalTime;
 import java.util.Date;
 import java.sql.Time;
 
 
 @Entity
-@Table(name = "equipment_booking")
+@Table(name = "equipment_bookings")
 public class EquipmentBooking {
 
     @Id
@@ -18,14 +19,14 @@ public class EquipmentBooking {
     @Column
     private String reservationNumber;
 
-    //@JoinColumn(name = "user_id", referencedColumnName = "id")
-   // private User user;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User user;
 
     @Column
     private String EquipBookedImg;
 
-    @Column
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "equipment_id", referencedColumnName = "id")
     private Equipment equipment;
     @Column
@@ -38,10 +39,10 @@ public class EquipmentBooking {
     private BookingStatus bookingStatus;
 
     @Column
-    private Time pickUp;
+    private LocalTime pickUp;
 
     @Column
-    private Time dropOff;
+    private LocalTime dropOff;
 
     @Column
     private int DurationInDays;
@@ -49,13 +50,8 @@ public class EquipmentBooking {
     public EquipmentBooking() {
     }
 
-
     public int getBookingId() {
         return bookingId;
-    }
-
-    public void setBookingId(int bookingId) {
-        this.bookingId = bookingId;
     }
 
     public String getReservationNumber() {
@@ -90,19 +86,19 @@ public class EquipmentBooking {
         this.bookingStatus = bookingStatus;
     }
 
-    public Time getPickUp() {
+    public LocalTime getPickUp() {
         return pickUp;
     }
 
-    public void setPickUp(Time pickUp) {
+    public void setPickUp(LocalTime pickUp) {
         this.pickUp = pickUp;
     }
 
-    public Time getDropOff() {
+    public LocalTime getDropOff() {
         return dropOff;
     }
 
-    public void setDropOff(Time dropOff) {
+    public void setDropOff(LocalTime dropOff) {
         this.dropOff = dropOff;
     }
 
@@ -123,14 +119,9 @@ public class EquipmentBooking {
     }
 
 
+    public User getUser() {return user;}
 
-   // public User getUser() {
-   //     return user;
-  //  }
-
-   // public void setUser(User user) {
-   //     this.user = user;
-  //  }
+    public void setUser(User user) {this.user = user;}
 
 
     public int getDurationInDays() {
@@ -146,11 +137,15 @@ public class EquipmentBooking {
         return "EquipmentBooking{" +
                 "bookingId=" + bookingId +
                 ", reservationNumber='" + reservationNumber + '\'' +
+                ", user=" + user +
+                ", EquipBookedImg='" + EquipBookedImg + '\'' +
+                ", equipment=" + equipment +
                 ", startDate=" + startDate +
                 ", endDate=" + endDate +
                 ", bookingStatus=" + bookingStatus +
                 ", pickUp=" + pickUp +
                 ", dropOff=" + dropOff +
+                ", DurationInDays=" + DurationInDays +
                 '}';
     }
 }

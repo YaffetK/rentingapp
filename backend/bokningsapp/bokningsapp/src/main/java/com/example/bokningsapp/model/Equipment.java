@@ -6,12 +6,12 @@ import jakarta.persistence.*;
 
 
     @Entity
-    @Table(name="equipment")
+    @Table(name="equipments")
     public class Equipment {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int equipmentId;
+        private int id;
 
         @Column
         private String equipmentName;
@@ -48,14 +48,7 @@ import jakarta.persistence.*;
         public Equipment() {
         }
 
-        public int getEquipmentId() {
-            return equipmentId;
-        }
-
-        public void setEquipmentId(int equipmentId) {
-            this.equipmentId = equipmentId;
-        }
-
+        public int getId() {return id;}
         public String getEquipmentName() {
             return equipmentName;
         }
@@ -123,7 +116,7 @@ import jakarta.persistence.*;
         @Override
         public String toString() {
             return "Equipment{" +
-                    "equipmentId=" + equipmentId +
+                    "id=" + id +
                     ", equipmentName='" + equipmentName + '\'' +
                     ", equipmentLocation='" + equipmentLocation + '\'' +
                     ", equipmentImg='" + equipmentImg + '\'' +

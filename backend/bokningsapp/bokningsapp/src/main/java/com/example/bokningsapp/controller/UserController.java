@@ -54,9 +54,9 @@ public class UserController {
 
     @PostMapping(value = "/user")
     public ResponseEntity<User> addUser(@RequestBody User user){
-        userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail()));
+        userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail(), user.getEquipmentBookings()));
         try{
-            User savedUser = userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail()));
+            User savedUser = userRepository.save(new User(user.getName(),user.getLastName(),user.getEmail(), user.getEquipmentBookings()));
             return new ResponseEntity<>(savedUser,HttpStatus.CREATED);
 
         } catch (Exception e){
