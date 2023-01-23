@@ -16,9 +16,13 @@ const EquipmentDefault = () => {
 
     const [data, setData] = useState([])
 
+    console.log(Axios.get(API_URL).then(res => {
+        console.log(res.data)
+    }).then(err => console.log(err)))
 
     useEffect(() => {
         Axios.get(API_URL).then(res => {
+            console.log(`res.data is => ${res.data}`)
             setData(res.data)
         }).catch(
             err => console.log(err)
