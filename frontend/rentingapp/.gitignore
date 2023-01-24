@@ -12,6 +12,8 @@
 /.next/
 /out/
 .next/
+frontend/rentingapp/.next/
+
 
 # production
 /build
@@ -33,6 +35,5 @@ yarn-error.log*
 .vercel
 
 # IntelIj
-./backend/
 App_data
 
