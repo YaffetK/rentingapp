@@ -15,50 +15,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/BokningsappApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/BokningsappApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/model/Camera.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/bokningsapp/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/BokningsappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/BokningsappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/EquipBookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/EquipBookingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/EquipmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/Camera.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/Equipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/EquipmentBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/EquipmentBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/repository/EquipBookingRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/repository/EquipBookingRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/repository/EquipmentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/repository/EquipmentRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipBookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipBookingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipBookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipBookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipmentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/client-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/cache/webpack/server-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/static/chunks/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/../../../frontend/rentingapp/.next/trace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bokningsapp/service/EquipmentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,21 +77,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "/Users/luliyamasfun/sti/projects/rentingapp2/backend/bokningsapp/bokningsapp",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "spring.configuration.checksum": "2d74ec2281fb7930b8c1d57299107812"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/luliyamasfun/sti/projects/rentingapp2/backend/bokningsapp/bokningsapp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2d74ec2281fb7930b8c1d57299107812&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BokningsappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bokningsapp.main" />
@@ -145,7 +112,8 @@
       <workItem from="1673906894924" duration="30702000" />
       <workItem from="1674070477638" duration="1613000" />
       <workItem from="1674318622684" duration="569000" />
-      <workItem from="1674431085419" duration="19063000" />
+      <workItem from="1674431085419" duration="35154000" />
+      <workItem from="1674564592872" duration="1086000" />
     </task>
     <servers />
   </component>

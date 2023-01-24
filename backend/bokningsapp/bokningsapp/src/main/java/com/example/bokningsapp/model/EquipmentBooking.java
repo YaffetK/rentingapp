@@ -1,8 +1,11 @@
 package com.example.bokningsapp.model;
 
 import com.example.bokningsapp.enums.BookingStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Value;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Date;
 import java.sql.Time;
@@ -17,6 +20,7 @@ public class EquipmentBooking {
     private int bookingId;
 
     @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String reservationNumber;
 
     @ManyToOne(cascade = CascadeType.ALL)
@@ -24,30 +28,47 @@ public class EquipmentBooking {
     private User user;
 
     @Column
-    private String EquipBookedImg;
+    private String equipBookedImg;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "equipment_id", referencedColumnName = "id")
     private Equipment equipment;
     @Column
-    private Date startDate;
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate startDate;
 
     @Column
-    private Date endDate;
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate endDate;
 
     @Column
     private BookingStatus bookingStatus;
 
     @Column
+    @JsonFormat(pattern = "HH:mm")
     private LocalTime pickUp;
 
     @Column
+    @JsonFormat(pattern = "HH:mm")
     private LocalTime dropOff;
 
-    @Column
-    private int DurationInDays;
+
+    public EquipmentBooking(User user, String equipBookedImg, Equipment equipment, LocalDate startDate, LocalDate endDate, BookingStatus bookingStatus, LocalTime pickUp, LocalTime dropOff) {
+        this.user = user;
+        this.equipBookedImg = equipBookedImg;
+        this.equipment = equipment;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.bookingStatus = bookingStatus;
+        this.pickUp = pickUp;
+        this.dropOff = dropOff;
+    }
 
     public EquipmentBooking() {
+    }
+
+    public EquipmentBooking(String reservationNumber) {
+        this.reservationNumber = reservationNumber;
     }
 
     public int getBookingId() {
@@ -62,19 +83,19 @@ public class EquipmentBooking {
         this.reservationNumber = reservationNumber;
     }
 
-    public Date getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 
-    public Date getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 
@@ -103,11 +124,11 @@ public class EquipmentBooking {
     }
 
     public String getEquipBookedImg() {
-        return EquipBookedImg;
+        return equipBookedImg;
     }
 
     public void setEquipBookedImg(String equipBookedImg) {
-        EquipBookedImg = equipBookedImg;
+        this.equipBookedImg = equipBookedImg;
     }
 
     public Equipment getEquipment() {
@@ -123,29 +144,19 @@ public class EquipmentBooking {
 
     public void setUser(User user) {this.user = user;}
 
-
-    public int getDurationInDays() {
-        return DurationInDays;
-    }
-
-    public void setDurationInDays(int durationInDays) {
-        DurationInDays = durationInDays;
-    }
-
     @Override
     public String toString() {
         return "EquipmentBooking{" +
                 "bookingId=" + bookingId +
                 ", reservationNumber='" + reservationNumber + '\'' +
                 ", user=" + user +
-                ", EquipBookedImg='" + EquipBookedImg + '\'' +
+                ", EquipBookedImg='" + equipBookedImg + '\'' +
                 ", equipment=" + equipment +
                 ", startDate=" + startDate +
                 ", endDate=" + endDate +
                 ", bookingStatus=" + bookingStatus +
                 ", pickUp=" + pickUp +
                 ", dropOff=" + dropOff +
-                ", DurationInDays=" + DurationInDays +
                 '}';
     }
 }

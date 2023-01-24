@@ -4,8 +4,10 @@ import com.example.bokningsapp.enums.EquipmentStatus;
 import com.example.bokningsapp.enums.EquipmentType;
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 
-    @Entity
+
+@Entity
     @Table(name="equipments")
     public class Equipment {
 
@@ -34,8 +36,10 @@ import jakarta.persistence.*;
         private EquipmentType equipmentType;
         @Column
         private EquipmentStatus equipmentStatus;
+        @Column
+        private boolean isAvailable;
 
-        public Equipment(String equipmentName, String equipmentLocation, String equipmentImg, int maxDaysToRent, String equipmentDescription, String equipmentBrand,  EquipmentType equipmentType) {
+        public Equipment(String equipmentName, String equipmentLocation, String equipmentImg, int maxDaysToRent, String equipmentDescription, String equipmentBrand,  EquipmentType equipmentType, EquipmentStatus equipmentStatus, boolean isAvailable) {
             this.equipmentName = equipmentName;
             this.equipmentLocation = equipmentLocation;
             this.equipmentImg = equipmentImg;
@@ -43,6 +47,8 @@ import jakarta.persistence.*;
             this.equipmentDescription = equipmentDescription;
             this.equipmentBrand = equipmentBrand;
             this.equipmentType = equipmentType;
+            this.equipmentStatus = equipmentStatus;
+            this.isAvailable = isAvailable;
         }
 
         public Equipment() {
@@ -111,6 +117,14 @@ import jakarta.persistence.*;
 
         public void setEquipmentStatus(EquipmentStatus equipmentStatus) {
             this.equipmentStatus = equipmentStatus;
+        }
+
+        public boolean isAvailable(LocalDate startDate, LocalDate endDate) {
+            return isAvailable;
+        }
+
+        public void setAvailable(boolean available) {
+            isAvailable = available;
         }
 
         @Override

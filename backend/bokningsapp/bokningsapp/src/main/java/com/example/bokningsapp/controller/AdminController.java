@@ -30,7 +30,7 @@ public class AdminController {
     }
 
     @PutMapping("/handleBooking/{id}/status")
-    public ResponseEntity<EquipmentBooking> updateBookingStatus (@PathVariable Long id, @RequestBody BookingStatus bookingStatus){
+    public ResponseEntity<EquipmentBooking> updateBookingStatus (@PathVariable int id, @RequestBody BookingStatus bookingStatus){
 
        EquipmentBooking equipmentBooking = equipBookingRepo.findById(id).orElseThrow();
 
@@ -44,7 +44,7 @@ public class AdminController {
     }
 
     @GetMapping("/getBookingsByStatus")
-    public ResponseEntity<List<EquipmentBooking>> getAllBookings(@RequestParam(required = false) BookingStatus status) {
+    public ResponseEntity<List<EquipmentBooking>> getAllBookings( @RequestParam(required = false) BookingStatus status) {
         List<EquipmentBooking> bookings;
         if(status == null) {
             bookings = equipBookingService.findAll();

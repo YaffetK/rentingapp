@@ -1,24 +1,30 @@
 package com.example.bokningsapp.controller;
 
 
+import com.example.bokningsapp.dto.EquipBookingDTO;
+import com.example.bokningsapp.dto.EquipUpdatedBookingDto;
 import com.example.bokningsapp.enums.BookingStatus;
 import com.example.bokningsapp.enums.EquipmentStatus;
+import com.example.bokningsapp.exception.BookingNotFoundException;
+import com.example.bokningsapp.exception.EquipmentNotAvailableException;
+import com.example.bokningsapp.exception.UnauthorizedUserException;
 import com.example.bokningsapp.model.Equipment;
 import com.example.bokningsapp.model.EquipmentBooking;
+import com.example.bokningsapp.model.User;
 import com.example.bokningsapp.repository.EquipBookingRepo;
 import com.example.bokningsapp.repository.EquipmentRepo;
 import com.example.bokningsapp.service.EquipBookingService;
-import com.example.bokningsapp.service.EquipBookingServiceImpl;
 import com.example.bokningsapp.service.EquipmentService;
-import com.example.bokningsapp.service.EquipmentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.Duration;
+import java.time.LocalDate;
 
 
 @RestController
@@ -28,6 +34,7 @@ public class EquipBookingController {
     private EquipBookingRepo equipBookingRepo;
     private EquipmentRepo equipmentRepo;
 
+
     @Autowired
     public EquipBookingController(EquipBookingService equipBookingService, EquipmentService equipmentService, EquipBookingRepo equipBookingRepo, EquipmentRepo equipmentRepo) {
         this.equipBookingService = equipBookingService;
@@ -35,35 +42,32 @@ public class EquipBookingController {
         this.equipmentRepo = equipmentRepo;
         this.equipBookingRepo = equipBookingRepo;
     }
-
-
-
-
     @PostMapping("/createBooking")
-    public ResponseEntity<EquipmentBooking>createBooking(@RequestBody EquipmentBooking equipmentBooking){
-
-        Equipment equipment = equipmentRepo.findById(equipmentBooking.getEquipment().getId()).orElseThrow();
-        equipmentBooking.setEquipment(equipment);
-
-        if(equipment.getEquipmentStatus() != EquipmentStatus.AVAILABLE) {
-            return new ResponseEntity<>(HttpStatus.CONFLICT);
+    public ResponseEntity<EquipmentBooking>createBooking(@Validated @RequestBody EquipBookingDTO equipBookingDTO){
+        try {
+            EquipmentBooking equipmentBooking = equipBookingService.createBooking(equipBookingDTO);
+            return new ResponseEntity<>(equipmentBooking,HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
-        int totalBookedDays = equipmentBooking.getDurationInDays();
-        if (totalBookedDays > 2) {
-            return new ResponseEntity<>(HttpStatus.CONFLICT);
+    }
+
+    @PutMapping("/updateBooking/{id}")
+    public ResponseEntity<EquipmentBooking> updateBooking(@PathVariable int id, @RequestBody EquipUpdatedBookingDto updatedEquipmentBookingDto, @AuthenticationPrincipal User user) {
+
+        try {
+          equipBookingService.updateBooking(id, updatedEquipmentBookingDto, user);
+            return new ResponseEntity<>(HttpStatus.OK);
+
+        } catch (BookingNotFoundException e) {
+            return new ResponseEntity<>( HttpStatus.NOT_FOUND);
+        } catch (UnauthorizedUserException e) {
+            return new ResponseEntity<>( HttpStatus.UNAUTHORIZED);
+        }
+        catch (EquipmentNotAvailableException ex) {
+            return new ResponseEntity<>(null, HttpStatus.CONFLICT);
         }
 
-        equipmentBooking.setStartDate(equipmentBooking.getStartDate());
-        equipmentBooking.setEndDate(equipmentBooking.getEndDate());
-        equipmentBooking.setPickUp(equipmentBooking.getPickUp());
-        equipmentBooking.setDropOff(equipmentBooking.getDropOff());
-
-        equipment.setEquipmentStatus(EquipmentStatus.UNAVAILABLE);
-        equipmentBooking.setBookingStatus(BookingStatus.PENDING);
-
-        equipBookingService.save(equipmentBooking);
-
-        return new ResponseEntity<>(equipmentBooking, HttpStatus.CREATED);
     }
 
 }

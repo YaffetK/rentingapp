@@ -2,10 +2,12 @@ package com.example.bokningsapp.service;
 
 import com.example.bokningsapp.enums.EquipmentStatus;
 import com.example.bokningsapp.enums.EquipmentType;
+import com.example.bokningsapp.exception.EquipmentNotFoundException;
 import com.example.bokningsapp.model.Equipment;
 import com.example.bokningsapp.repository.EquipmentRepo;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -34,9 +36,17 @@ public class EquipmentServiceImpl implements EquipmentService {
             equipmentRepo.save(updateEquipment);
         }
     }
-
     @Override
     public List<Equipment> findEquipmentByType(EquipmentType equipmentType) {
         return equipmentRepo.findByEquipmentType(equipmentType);
     }
+
+    @Transactional
+    @Override
+    public void deleteEquipment(int id) {
+        Equipment equipment = equipmentRepo.findById(id)
+                .orElseThrow(() -> new EquipmentNotFoundException("Equipment not found with id " + id));
+        equipmentRepo.delete(equipment);
+    }
+
 }

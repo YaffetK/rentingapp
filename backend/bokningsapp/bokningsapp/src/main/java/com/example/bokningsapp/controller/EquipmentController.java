@@ -1,6 +1,8 @@
 package com.example.bokningsapp.controller;
 
 import com.example.bokningsapp.enums.EquipmentType;
+import com.example.bokningsapp.exception.BookingNotFoundException;
+import com.example.bokningsapp.exception.EquipmentNotFoundException;
 import com.example.bokningsapp.model.Equipment;
 import com.example.bokningsapp.repository.EquipmentRepo;
 import com.example.bokningsapp.service.EquipmentService;
@@ -24,19 +26,27 @@ public class EquipmentController {
         this.equipmentRepo = equipmentRepo;
         this.equipmentService = equipmentService;
     }
-    @GetMapping(value = "/allEquipment")
-    public List<Equipment> getAllEquipment() {
-        return equipmentRepo.findAll();
-    }
-
     @PostMapping(value = "/createEquipment")
     public ResponseEntity<Equipment> createEquipment(@RequestBody Equipment equipment) {
 
         Equipment newEquipment = equipmentService.saveEquipment(equipment);
         return new ResponseEntity<>(newEquipment, HttpStatus.CREATED);
     }
+    @GetMapping(value = "/allEquipment")
+    public List<Equipment> getAllEquipment() {
+        return equipmentRepo.findAll();
+    }
 
-    @GetMapping("/EquipmentByType/{type}")
+    @DeleteMapping("/equipment/{id}")
+    public ResponseEntity<?> deleteEquipment(@PathVariable int id) {
+        try {
+            equipmentService.deleteEquipment(id);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (EquipmentNotFoundException ex) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+    @GetMapping("/equipmentType/{type}")
     public ResponseEntity<List<Equipment>> findEquipmentByType(@PathVariable EquipmentType type) {
         List<Equipment> equipmentList = equipmentRepo.findByEquipmentType(type);
         if (equipmentList.isEmpty()) {
